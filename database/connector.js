@@ -16,6 +16,7 @@ class Connector {
           useNewUrlParser: true,
           useUnifiedTopology: true,
           useFindAndModify: true,
+          useCreateIndex: true,
         });
         resolve(true);
       } catch (err) {

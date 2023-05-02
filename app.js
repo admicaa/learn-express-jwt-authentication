@@ -4,8 +4,10 @@ import RouteServiceProvider from "./providers/RouteServiceProvider.js";
 import notFound from "./app/middleware/not-found.js";
 import errorHandlerMiddleware from "./app/middleware/error-handler.js";
 import expressAsycErrors from "express-async-errors";
+import dotenv from "dotenv";
 class App {
   constructor() {
+    dotenv.config();
     this.server = express();
     this.middlewares();
     this.routes();
